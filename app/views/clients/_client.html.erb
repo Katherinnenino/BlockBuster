@@ -1,0 +1,10 @@
+<div id="<%= dom_id client %>">
+  <tr>
+    <th class=" text-white bg-dark mb-3"scope="row"><%= client.id %></th>
+    <td class=" text-white bg-dark mb-3"><%= client.name %></td>
+    <td class=" text-white bg-dark mb-3"><%= client.age %></td>
+    <td class=" text-white bg-dark mb-3"><%= client.movies.last %></td>
+    <td class=" text-white bg-dark mb-3"><%= link_to "Mostrar", client %></td>
+    <td class=" text-white bg-dark mb-3"><%= link_to "Editar", edit_client_path(client) %></td>
+  </tr>
+</div>
